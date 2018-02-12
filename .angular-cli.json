@@ -1,0 +1,83 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "frontend"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "images",
+        "video"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "ag",
+      "styles": [
+        "styles.css",
+        "./assets/elegant-icons/style.css",
+        "./css/owl.theme.css",
+        "./css/owl.carousel.css",
+        "./css/nivo_themes/default/default.css",
+        "./css/animate.min.css",
+        "./css/styles.css",
+        "./css/responsive.css"
+      ],
+      "scripts": [
+        "./js/bootstrap.min.js",
+        "./js/smoothscroll.js",
+        "./js/smoothscroll.js",
+        "./js/jquery.scrollTo.min.js",
+        "./js/jquery.localScroll.min.js",
+        "./js/owl.carousel.min.js",
+        "./js/simple-expand.min.js",
+        "./js/wow.min.js",
+        "./js/jquery.stellar.min.js",
+        "./js/retina.min.js",
+        "./js/matchMedia.js",
+        "./js/jquery.nav.js",
+        "./js/jquery.fitvids.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
